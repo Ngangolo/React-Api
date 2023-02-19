@@ -7,8 +7,8 @@ import Dashboard from "./pages/Dashboard"
 import ProjectCreate from "./pages/ProjectCreate"
 import ProjectEdit from "./pages/ProjectEdit"
 import ProjectShow from "./pages/ProjectShow"
- 
-  
+
+
 function App() {
   return (
     <Router>
@@ -24,5 +24,5 @@ function App() {
     </Router>
   );
 }
-  
+        
 export default App;
