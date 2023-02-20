@@ -43,7 +43,7 @@ function Register() {
      
     return (
         <Layout>
-            <div className="row justify-content-md-center mt-5">
+            <div className="row justify-content-md-center mt-5 pcoded-main-container">
                 <div className="col-4">
                     <div className="card">
                         <div className="card-body">

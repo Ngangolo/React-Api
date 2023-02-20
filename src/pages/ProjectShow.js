@@ -20,7 +20,7 @@ function ProjectShow() {
   
     return (
         <Layout>
-           <div className="container">
+           <div className="pcoded-main-container">
             <h2 className="text-center mt-5 mb-3">Show Project</h2>
                 <div className="card">
                     <div className="card-header">

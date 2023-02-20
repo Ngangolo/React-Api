@@ -13,9 +13,9 @@ function App() {
   return (
     <Router>
       <Routes>
-          <Route exact path="/"  element={<Login/>} />
+          <Route exact path="/login"  element={<Login/>} />
           <Route path="/register"  element={<Register/>} />
-          <Route path="/dashboard"  element={<Dashboard/>} />
+          <Route path="/"  element={<Dashboard/>} />
           {/* <Route exact path="/list"  element={<ProjectList/>} /> */}
           <Route path="/create"  element={<ProjectCreate/>} />
           <Route path="/edit/:id"  element={<ProjectEdit/>} />

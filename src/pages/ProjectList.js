@@ -57,8 +57,8 @@ function ProjectList() {
     }
   
     return (
-        <Layout>
-           <div className="container">
+        <>
+           <div  className="pcoded-main-container">
             <h2 className="text-center mt-5 mb-3">Project Manager</h2>
                 <div className="card">
                     <div className="card-header">
@@ -108,7 +108,7 @@ function ProjectList() {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </>
     );
 }
   
