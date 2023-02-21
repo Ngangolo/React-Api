@@ -11,7 +11,7 @@ function Login() {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     useEffect(() => {
-        if (localStorage.getItem('token') != "" && localStorage.getItem('token') != null) {
+        if (localStorage.getItem('token') !== "" && localStorage.getItem('token') !== null) {
             navigate("/dashboard");
         }
         console.log(localStorage.getItem('token'))

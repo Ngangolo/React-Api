@@ -13,7 +13,7 @@ function Register() {
     const [isSubmitting, setIsSubmitting] = useState(false);
  
     useEffect(()=>{
-        if(localStorage.getItem('token') != "" && localStorage.getItem('token') != null){
+        if(localStorage.getItem('token') !== "" && localStorage.getItem('token') !== null){
             navigate("/dashboard");
         }
     },[])
@@ -35,7 +35,7 @@ function Register() {
         })
         .catch((e) => {
             setIsSubmitting(false)
-            if (e.response.data.errors != undefined) {
+            if (e.response.data.errors !== undefined) {
                 setValidationErrors(e.response.data.errors);
             }
         });

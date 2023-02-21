@@ -9,7 +9,7 @@ function Dashboard() {
     const [user, setUser] = useState({})
  
     useEffect(()=>{
-        if(localStorage.getItem('token') == "" || localStorage.getItem('token') == null){
+        if(localStorage.getItem('token') === "" || localStorage.getItem('token') == null){
             navigate("/");
         }else {
             getUser()

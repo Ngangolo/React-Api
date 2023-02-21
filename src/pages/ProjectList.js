@@ -2,7 +2,6 @@ import React,{ useState, useEffect} from 'react'
 import { Link } from "react-router-dom"
 import Swal from 'sweetalert2'
 import axios from 'axios'
-import Layout from "../components/Layout"
  
  
   
@@ -67,7 +66,7 @@ function ProjectList() {
                             to="/create">Create New Project
                         </Link>
                     </div>
-                    <div className="card-body">
+                    <div className="card-body container">
               
                         <table className="table table-bordered">
                             <thead>
