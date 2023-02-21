@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link, useNavigate } from "react-router-dom"
-import Layout from "../components/Layout"
+
   
 function Register() {
     const navigate = useNavigate();
@@ -42,7 +42,7 @@ function Register() {
     }
      
     return (
-        <Layout>
+        <>
             <div className="row justify-content-md-center mt-5 pcoded-main-container">
                 <div className="col-4">
                     <div className="card">
@@ -143,7 +143,7 @@ function Register() {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </>
     );
 }
    

@@ -3,115 +3,160 @@ import React from 'react'
 function Sidebar() {
   return (
     <>
-	<div className="loader-bg">
-		<div className="loader-track">
-			<div className="loader-fill"></div>
-		</div>
-	</div>
-	<nav className="pcoded-navbar  ">
-		<div className="navbar-wrapper  ">
-			<div className="navbar-content scroll-div " >
-				
-				<div className="">
-					<div className="main-menu-header">
-						{/* <img className="img-radius" src="assets/images/user/avatar-2.jpg" alt="User-Profile-Image"> */}
-						<div className="user-details">
-							<span>John Doe</span>
-							<div id="more-details">UX Designer<i className="fa fa-chevron-down m-l-5"></i></div>
-						</div>
-					</div>
-					<div className="collapse" id="nav-user-link">
-						<ul className="list-unstyled">
-							<li className="list-group-item"><a href="user-profile.html"><i className="feather icon-user m-r-5"></i>View Profile</a></li>
-							<li className="list-group-item"><a href="#!"><i className="feather icon-settings m-r-5"></i>Settings</a></li>
-							<li className="list-group-item"><a href="auth-normal-sign-in.html"><i className="feather icon-log-out m-r-5"></i>Logout</a></li>
-						</ul>
-					</div>
-				</div>
-				
-				<ul className="nav pcoded-inner-navbar ">
-					<li className="nav-item pcoded-menu-caption">
-						<label>Navigation</label>
-					</li>
-					<li className="nav-item">
-					    <a href="index.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-home"></i></span><span className="pcoded-mtext">Dashboard</span></a>
-					</li>
-					<li className="nav-item pcoded-hasmenu">
-					    <a href="#!" className="nav-link "><span className="pcoded-micon"><i className="feather icon-layout"></i></span><span className="pcoded-mtext">Page layouts</span></a>
-					    <ul className="pcoded-submenu">
-					        <li><a href="layout-vertical.html" target="_blank">Vertical</a></li>
-					        <li><a href="layout-horizontal.html" target="_blank">Horizontal</a></li>
-					    </ul>
-					</li>
-					<li className="nav-item pcoded-menu-caption">
-						<label>UI Element</label>
-					</li>
-					<li className="nav-item pcoded-hasmenu">
-						<a href="#!" className="nav-link "><span className="pcoded-micon"><i className="feather icon-box"></i></span><span className="pcoded-mtext">Basic</span></a>
-						<ul className="pcoded-submenu">
-							<li><a href="bc_alert.html">Alert</a></li>
-							<li><a href="bc_button.html">Button</a></li>
-							<li><a href="bc_badges.html">Badges</a></li>
-							<li><a href="bc_breadcrumb-pagination.html">Breadcrumb & paggination</a></li>
-							<li><a href="bc_card.html">Cards</a></li>
-							<li><a href="bc_collapse.html">Collapse</a></li>
-							<li><a href="bc_carousel.html">Carousel</a></li>
-							<li><a href="bc_grid.html">Grid system</a></li>
-							<li><a href="bc_progress.html">Progress</a></li>
-							<li><a href="bc_modal.html">Modal</a></li>
-							<li><a href="bc_spinner.html">Spinner</a></li>
-							<li><a href="bc_tabs.html">Tabs & pills</a></li>
-							<li><a href="bc_typography.html">Typography</a></li>
-							<li><a href="bc_tooltip-popover.html">Tooltip & popovers</a></li>
-							<li><a href="bc_toasts.html">Toasts</a></li>
-							<li><a href="bc_extra.html">Other</a></li>
-						</ul>
-					</li>
-					<li className="nav-item pcoded-menu-caption">
-					    <label>Forms &amp; table</label>
-					</li>
-					<li className="nav-item">
-					    <a href="form_elements.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-file-text"></i></span><span className="pcoded-mtext">Forms</span></a>
-					</li>
-					<li className="nav-item">
-					    <a href="tbl_bootstrap.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-align-justify"></i></span><span className="pcoded-mtext">Bootstrap table</span></a>
-					</li>
-					<li className="nav-item pcoded-menu-caption">
-						<label>Chart & Maps</label>
-					</li>
-					<li className="nav-item">
-					    <a href="chart-apex.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-pie-chart"></i></span><span className="pcoded-mtext">Chart</span></a>
-					</li>
-					<li className="nav-item">
-					    <a href="map-google.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-map"></i></span><span className="pcoded-mtext">Maps</span></a>
-					</li>
-					<li className="nav-item pcoded-menu-caption">
-						<label>Pages</label>
-					</li>
-					<li className="nav-item pcoded-hasmenu">
-					    <a href="#!" className="nav-link "><span className="pcoded-micon"><i className="feather icon-lock"></i></span><span className="pcoded-mtext">Authentication</span></a>
-					    <ul className="pcoded-submenu">
-					        <li><a href="auth-signup.html" target="_blank">Sign up</a></li>
-					        <li><a href="auth-signin.html" target="_blank">Sign in</a></li>
-					    </ul>
-					</li>
-					<li className="nav-item"><a href="sample-page.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-sidebar"></i></span><span className="pcoded-mtext">Sample page</span></a></li>
-
-				</ul>
-				
-				<div className="card text-center">
-					<div className="card-block">
-						<button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						<i className="feather icon-sunset f-40"></i>
-						<h6 className="mt-3">Upgrade To Pro</h6>
-						<p>Please contact us on our email for need any support</p>
-						{/* <a href="https://1.envato.market/PgJNQ" target="_blank" className="btn btn-primary btn-sm text-white m-0">Upgrade</a> */}
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
+	 {/* <!-- Sidebar chat start --> */}
+        <div id="sidebar" class="users p-chat-user showChat">
+            <div class="had-container">
+                <div class="card card_main p-fixed users-main">
+                    <div class="user-box">
+                        <div class="card-block">
+                            <div class="right-icon-control">
+                                {/* <input type="text" class="form-control  search-text" placeholder="Search Friend" id="search-friends"> */}
+                                <div class="form-icon">
+                                    <i class="icofont icofont-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-friend-list">
+                            <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Josephin Doe</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe" data-toggle="tooltip" data-placement="left" title="Lary Doe">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/task/task-u1.jpg" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Lary Doe</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-2.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Alice</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="4" data-status="online" data-username="Alia" data-toggle="tooltip" data-placement="left" title="Alia">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/task/task-u2.jpg" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Alia</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="5" data-status="online" data-username="Suzen" data-toggle="tooltip" data-placement="left" title="Suzen">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/task/task-u3.jpg" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Suzen</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="6" data-status="offline" data-username="Michael Scofield" data-toggle="tooltip" data-placement="left" title="Michael Scofield">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-3.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-danger"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Michael Scofield</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="7" data-status="online" data-username="Irina Shayk" data-toggle="tooltip" data-placement="left" title="Irina Shayk">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-4.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Irina Shayk</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="8" data-status="offline" data-username="Sara Tancredi" data-toggle="tooltip" data-placement="left" title="Sara Tancredi">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-5.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-danger"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Sara Tancredi</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="9" data-status="online" data-username="Samon" data-toggle="tooltip" data-placement="left" title="Samon">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Samon</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="10" data-status="online" data-username="Daizy Mendize" data-toggle="tooltip" data-placement="left" title="Daizy Mendize">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/task/task-u3.jpg" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Daizy Mendize</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="11" data-status="offline" data-username="Loren Scofield" data-toggle="tooltip" data-placement="left" title="Loren Scofield">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-3.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-danger"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Loren Scofield</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="12" data-status="online" data-username="Shayk" data-toggle="tooltip" data-placement="left" title="Shayk">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-4.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Shayk</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="13" data-status="offline" data-username="Sara" data-toggle="tooltip" data-placement="left" title="Sara">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/task/task-u3.jpg" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-danger"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Sara</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="14" data-status="online" data-username="Doe" data-toggle="tooltip" data-placement="left" title="Doe">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Doe</div>
+                                </div>
+                            </div>
+                            <div class="media userlist-box" data-id="15" data-status="online" data-username="Lary" data-toggle="tooltip" data-placement="left" title="Lary">
+                                <a class="media-left" href="#!">
+                                    {/* <img class="media-object img-circle" src="assets/images/task/task-u1.jpg" alt="Generic placeholder image"> */}
+                                    <div class="live-status bg-success"></div>
+                                </a>
+                                <div class="media-body">
+                                    <div class="f-13 chat-header">Lary</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </>
   )
