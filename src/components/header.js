@@ -2,163 +2,163 @@ import React from 'react'
 
 function Header() {
   return (
-    <nav class="navbar header-navbar pcoded-header" header-theme="theme4">
-    <div class="navbar-wrapper">
-        <div class="navbar-logo">
-            <a class="mobile-menu" id="mobile-collapse" href="#!">
-                <i class="ti-menu"></i>
+    <nav className="navbar header-navbar pcoded-header" header-theme="theme4">
+    <div className="navbar-wrapper">
+        <div className="navbar-logo">
+            <a className="mobile-menu" id="mobile-collapse" href="#!">
+                <i className="ti-menu"></i>
             </a>
-            <a class="mobile-search morphsearch-search" href="#">
-                <i class="ti-search"></i>
+            <a className="mobile-search morphsearch-search" href="/#">
+                <i className="ti-search"></i>
             </a>
             <a href="index-2.html">
-                <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                <img className="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
             </a>
-            <a class="mobile-options">
-                <i class="ti-more"></i>
+            <a className="mobile-options">
+                <i className="ti-more"></i>
             </a>
         </div>
-        <div class="navbar-container container-fluid">
+        <div className="navbar-container container-fluid">
             <div>
-                <ul class="nav-left">
+                <ul className="nav-left">
                     <li>
-                        <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                        <div className="sidebar_toggle"><a href="javascript:void(0)"><i className="ti-menu"></i></a></div>
                     </li>
                     <li>
-                        <a class="main-search morphsearch-search" href="/#">
-                            <i class="ti-search"></i>
+                        <a className="main-search morphsearch-search" href="/#">
+                            <i className="ti-search"></i>
                         </a>
                     </li>
                     <li>
                         <a href="/#!" onclick="javascript:toggleFullScreen()">
-                            <i class="ti-fullscreen"></i>
+                            <i className="ti-fullscreen"></i>
                         </a>
                     </li>
                     
                 </ul>
-                <ul class="nav-right">
-                    <li class="header-notification lng-dropdown">
+                <ul className="nav-right">
+                    <li className="header-notification lng-dropdown">
                         <a href="/#" id="dropdown-active-item">
-                            <i class="flag-icon flag-icon-gb m-r-5"></i> English
+                            <i className="flag-icon flag-icon-gb m-r-5"></i> English
                         </a>
-                        <ul class="show-notification">
+                        <ul className="show-notification">
                             <li>
                                 <a href="/#" data-lng="en">
-                                    <i class="flag-icon flag-icon-gb m-r-5"></i> English
+                                    <i className="flag-icon flag-icon-gb m-r-5"></i> English
                                 </a>
                             </li>
                             <li>
                                 <a href="/#" data-lng="es">
-                                    <i class="flag-icon flag-icon-es m-r-5"></i> Spanish
+                                    <i className="flag-icon flag-icon-es m-r-5"></i> Spanish
                                 </a>
                             </li>
                             <li>
                                 <a href="/#" data-lng="pt">
-                                    <i class="flag-icon flag-icon-pt m-r-5"></i> Portuguese
+                                    <i className="flag-icon flag-icon-pt m-r-5"></i> Portuguese
                                 </a>
                             </li>
                             <li>
                                 <a href="/#" data-lng="fr">
-                                    <i class="flag-icon flag-icon-fr m-r-5"></i> French
+                                    <i className="flag-icon flag-icon-fr m-r-5"></i> French
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="header-notification">
+                    <li className="header-notification">
                         <a href="#!">
-                            <i class="ti-bell"></i>
-                            <span class="badge">5</span>
+                            <i className="ti-bell"></i>
+                            <span className="badge">5</span>
                         </a>
-                        <ul class="show-notification">
+                        <ul className="show-notification">
                             <li>
                                 <h6>Notifications</h6>
-                                <label class="label label-danger">New</label>
+                                <label className="label label-danger">New</label>
                             </li>
                            
                         </ul>
                     </li>
-                    <li class="header-notification">
-                        <a href="#!" class="displayChatbox">
-                            <i class="ti-comments"></i>
-                            <span class="badge">9</span>
+                    <li className="header-notification">
+                        <a href="#!" className="displayChatbox">
+                            <i className="ti-comments"></i>
+                            <span className="badge">9</span>
                         </a>
                     </li>
-                    <li class="user-profile header-notification">
+                    <li className="user-profile header-notification">
                         <a href="#!">
                             {/* <img src="assets/images/user.png" alt="User-Profile-Image"> */}
                             <span>John Doe</span>
-                            <i class="ti-angle-down"></i>
+                            <i className="ti-angle-down"></i>
                         </a>
-                        <ul class="show-notification profile-notification">
+                        <ul className="show-notification profile-notification">
                             <li>
                                 <a href="#!">
-                                    <i class="ti-settings"></i> Settings
+                                    <i className="ti-settings"></i> Settings
                                 </a>
                             </li>
                             <li>
                                 <a href="user-profile.html">
-                                    <i class="ti-user"></i> Profile
+                                    <i className="ti-user"></i> Profile
                                 </a>
                             </li>
                             <li>
                                 <a href="email-inbox.html">
-                                    <i class="ti-email"></i> My Messages
+                                    <i className="ti-email"></i> My Messages
                                 </a>
                             </li>
                             <li>
                                 <a href="auth-lock-screen.html">
-                                    <i class="ti-lock"></i> Lock Screen
+                                    <i className="ti-lock"></i> Lock Screen
                                 </a>
                             </li>
                             <li>
                                 <a href="#!">
-                                    <i class="ti-layout-sidebar-left"></i> Logout
+                                    <i className="ti-layout-sidebar-left"></i> Logout
                                 </a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                <div id="morphsearch" class="morphsearch">
-                    <form class="morphsearch-form">
-                        <input class="morphsearch-input" type="search" placeholder="Search..." />
-                        <button class="morphsearch-submit" type="submit">Search</button>
+                <div id="morphsearch" className="morphsearch">
+                    <form className="morphsearch-form">
+                        <input className="morphsearch-input" type="search" placeholder="Search..." />
+                        <button className="morphsearch-submit" type="submit">Search</button>
                     </form>
-                    <div class="morphsearch-content">
-                        <div class="dummy-column">
+                    <div className="morphsearch-content">
+                        <div className="dummy-column">
                             <h2>People</h2>
-                            <a class="dummy-media-object" href="#!">
-                                <img class="round" src="http://0.gravatar.com/avatar/81b58502541f9445253f30497e53c280?s=50&amp;d=identicon&amp;r=G" alt="Sara Soueidan" />
+                            <a className="dummy-media-object" href="#!">
+                                <img className="round" src="http://0.gravatar.com/avatar/81b58502541f9445253f30497e53c280?s=50&amp;d=identicon&amp;r=G" alt="Sara Soueidan" />
                                 <h3>Sara Soueidan</h3>
                             </a>
-                            <a class="dummy-media-object" href="#!">
-                                <img class="round" src="http://1.gravatar.com/avatar/9bc7250110c667cd35c0826059b81b75?s=50&amp;d=identicon&amp;r=G" alt="Shaun Dona" />
+                            <a className="dummy-media-object" href="#!">
+                                <img className="round" src="http://1.gravatar.com/avatar/9bc7250110c667cd35c0826059b81b75?s=50&amp;d=identicon&amp;r=G" alt="Shaun Dona" />
                                 <h3>Shaun Dona</h3>
                             </a>
                         </div>
-                        <div class="dummy-column">
+                        <div className="dummy-column">
                             <h2>Popular</h2>
-                            <a class="dummy-media-object" href="#!">
+                            <a className="dummy-media-object" href="#!">
                                 <img src="assets/images/avatar-1.png" alt="PagePreloadingEffect" />
                                 <h3>Page Preloading Effect</h3>
                             </a>
-                            <a class="dummy-media-object" href="#!">
+                            <a className="dummy-media-object" href="#!">
                                 <img src="assets/images/avatar-1.png" alt="DraggableDualViewSlideshow" />
                                 <h3>Draggable Dual-View Slideshow</h3>
                             </a>
                         </div>
-                        <div class="dummy-column">
+                        <div className="dummy-column">
                             <h2>Recent</h2>
-                            <a class="dummy-media-object" href="#!">
+                            <a className="dummy-media-object" href="#!">
                                 <img src="assets/images/avatar-1.png" alt="TooltipStylesInspiration" />
                                 <h3>Tooltip Styles Inspiration</h3>
                             </a>
-                            <a class="dummy-media-object" href="#!">
+                            <a className="dummy-media-object" href="#!">
                                 <img src="assets/images/avatar-1.png" alt="NotificationStyles" />
                                 <h3>Notification Styles Inspiration</h3>
                             </a>
                         </div>
                     </div>
-                    <span class="morphsearch-close"><i class="icofont icofont-search-alt-1"></i></span>
+                    <span className="morphsearch-close"><i className="icofont icofont-search-alt-1"></i></span>
                 </div>
             </div>
         </div>

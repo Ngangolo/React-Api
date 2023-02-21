@@ -43,20 +43,21 @@ function Dashboard() {
                 <div className="col-12">
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         <div className="container-fluid">
-                            <a className="navbar-brand" href="#">Dashboard</a>
+                            <a className="navbar-brand" href="/#">Dashboard</a>
                             <div className="d-flex">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a onClick={()=>logoutAction()} className="nav-link " aria-current="page" href="#">Logout</a>
+                                        <a onClick={()=>logoutAction()} className="nav-link " aria-current="page" href="/#">Logout</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                     {/* <h2 className="text-center mt-5">Welcome, {user.name}!</h2  > */}
-                    <ProjectList/>
+                   
                 </div>
             </div>
+            <ProjectList/>
         </Layout>
     );
 }
