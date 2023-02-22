@@ -54,10 +54,10 @@ function Dashboard() {
                         </div>
                     </nav>
                     {/* <h2 className="text-center mt-5">Welcome, {user.name}!</h2  > */}
-                   
+                    <ProjectList/>
                 </div>
             </div>
-            <ProjectList/>
+           
         </Layout>
     );
 }

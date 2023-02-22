@@ -2,168 +2,118 @@ import React from 'react'
 
 function Header() {
   return (
-    <nav className="navbar header-navbar pcoded-header" header-theme="theme4">
-    <div className="navbar-wrapper">
-        <div className="navbar-logo">
-            <a className="mobile-menu" id="mobile-collapse" href="#!">
-                <i className="ti-menu"></i>
-            </a>
-            <a className="mobile-search morphsearch-search" href="/#">
-                <i className="ti-search"></i>
-            </a>
-            <a href="index-2.html">
-                <img className="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
-            </a>
-            <a className="mobile-options">
-                <i className="ti-more"></i>
-            </a>
-        </div>
-        <div className="navbar-container container-fluid">
-            <div>
-                <ul className="nav-left">
-                    <li>
-                        <div className="sidebar_toggle"><a href="javascript:void(0)"><i className="ti-menu"></i></a></div>
-                    </li>
-                    <li>
-                        <a className="main-search morphsearch-search" href="/#">
-                            <i className="ti-search"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/#!" onclick="javascript:toggleFullScreen()">
-                            <i className="ti-fullscreen"></i>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <ul className="nav-right">
-                    <li className="header-notification lng-dropdown">
-                        <a href="/#" id="dropdown-active-item">
-                            <i className="flag-icon flag-icon-gb m-r-5"></i> English
-                        </a>
-                        <ul className="show-notification">
-                            <li>
-                                <a href="/#" data-lng="en">
-                                    <i className="flag-icon flag-icon-gb m-r-5"></i> English
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/#" data-lng="es">
-                                    <i className="flag-icon flag-icon-es m-r-5"></i> Spanish
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/#" data-lng="pt">
-                                    <i className="flag-icon flag-icon-pt m-r-5"></i> Portuguese
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/#" data-lng="fr">
-                                    <i className="flag-icon flag-icon-fr m-r-5"></i> French
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="header-notification">
-                        <a href="#!">
-                            <i className="ti-bell"></i>
-                            <span className="badge">5</span>
-                        </a>
-                        <ul className="show-notification">
-                            <li>
-                                <h6>Notifications</h6>
-                                <label className="label label-danger">New</label>
-                            </li>
-                           
-                        </ul>
-                    </li>
-                    <li className="header-notification">
-                        <a href="#!" className="displayChatbox">
-                            <i className="ti-comments"></i>
-                            <span className="badge">9</span>
-                        </a>
-                    </li>
-                    <li className="user-profile header-notification">
-                        <a href="#!">
-                            {/* <img src="assets/images/user.png" alt="User-Profile-Image"> */}
-                            <span>John Doe</span>
-                            <i className="ti-angle-down"></i>
-                        </a>
-                        <ul className="show-notification profile-notification">
-                            <li>
-                                <a href="#!">
-                                    <i className="ti-settings"></i> Settings
-                                </a>
-                            </li>
-                            <li>
-                                <a href="user-profile.html">
-                                    <i className="ti-user"></i> Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="email-inbox.html">
-                                    <i className="ti-email"></i> My Messages
-                                </a>
-                            </li>
-                            <li>
-                                <a href="auth-lock-screen.html">
-                                    <i className="ti-lock"></i> Lock Screen
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <i className="ti-layout-sidebar-left"></i> Logout
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div id="morphsearch" className="morphsearch">
-                    <form className="morphsearch-form">
-                        <input className="morphsearch-input" type="search" placeholder="Search..." />
-                        <button className="morphsearch-submit" type="submit">Search</button>
-                    </form>
-                    <div className="morphsearch-content">
-                        <div className="dummy-column">
-                            <h2>People</h2>
-                            <a className="dummy-media-object" href="#!">
-                                <img className="round" src="http://0.gravatar.com/avatar/81b58502541f9445253f30497e53c280?s=50&amp;d=identicon&amp;r=G" alt="Sara Soueidan" />
-                                <h3>Sara Soueidan</h3>
-                            </a>
-                            <a className="dummy-media-object" href="#!">
-                                <img className="round" src="http://1.gravatar.com/avatar/9bc7250110c667cd35c0826059b81b75?s=50&amp;d=identicon&amp;r=G" alt="Shaun Dona" />
-                                <h3>Shaun Dona</h3>
-                            </a>
-                        </div>
-                        <div className="dummy-column">
-                            <h2>Popular</h2>
-                            <a className="dummy-media-object" href="#!">
-                                <img src="assets/images/avatar-1.png" alt="PagePreloadingEffect" />
-                                <h3>Page Preloading Effect</h3>
-                            </a>
-                            <a className="dummy-media-object" href="#!">
-                                <img src="assets/images/avatar-1.png" alt="DraggableDualViewSlideshow" />
-                                <h3>Draggable Dual-View Slideshow</h3>
-                            </a>
-                        </div>
-                        <div className="dummy-column">
-                            <h2>Recent</h2>
-                            <a className="dummy-media-object" href="#!">
-                                <img src="assets/images/avatar-1.png" alt="TooltipStylesInspiration" />
-                                <h3>Tooltip Styles Inspiration</h3>
-                            </a>
-                            <a className="dummy-media-object" href="#!">
-                                <img src="assets/images/avatar-1.png" alt="NotificationStyles" />
-                                <h3>Notification Styles Inspiration</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <span className="morphsearch-close"><i className="icofont icofont-search-alt-1"></i></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
+    <>
+	<div className="loader-bg">
+		<div className="loader-track">
+			<div className="loader-fill"></div>
+		</div>
+	</div>
+	
+	<nav className="pcoded-navbar  ">
+		<div className="navbar-wrapper  ">
+			<div className="navbar-content scroll-div " >
+				
+				<div className="">
+					<div className="main-menu-header">
+						{/* <img className="img-radius" src="assets/images/user/avatar-2.jpg" alt="User-Profile-Image"> */}
+						<div className="user-details">
+							<span>John Doe</span>
+							<div id="more-details">UX Designer<i className="fa fa-chevron-down m-l-5"></i></div>
+						</div>
+					</div>
+					<div className="collapse" id="nav-user-link">
+						<ul className="list-unstyled">
+							<li className="list-group-item"><a href="user-profile.html"><i className="feather icon-user m-r-5"></i>View Profile</a></li>
+							<li className="list-group-item"><a href="#!"><i className="feather icon-settings m-r-5"></i>Settings</a></li>
+							<li className="list-group-item"><a href="auth-normal-sign-in.html"><i className="feather icon-log-out m-r-5"></i>Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul className="nav pcoded-inner-navbar ">
+					<li className="nav-item pcoded-menu-caption">
+						<label>Navigation</label>
+					</li>
+					<li className="nav-item">
+					    <a href="index.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-home"></i></span><span className="pcoded-mtext">Dashboard</span></a>
+					</li>
+					<li className="nav-item pcoded-hasmenu">
+					    <a href="#!" className="nav-link "><span className="pcoded-micon"><i className="feather icon-layout"></i></span><span className="pcoded-mtext">Page layouts</span></a>
+					    <ul className="pcoded-submenu">
+					        <li><a href="layout-vertical.html" target="_blank">Vertical</a></li>
+					        <li><a href="layout-horizontal.html" target="_blank">Horizontal</a></li>
+					    </ul>
+					</li>
+					<li className="nav-item pcoded-menu-caption">
+						<label>UI Element</label>
+					</li>
+					<li className="nav-item pcoded-hasmenu">
+						<a href="#!" className="nav-link "><span className="pcoded-micon"><i className="feather icon-box"></i></span><span className="pcoded-mtext">Basic</span></a>
+						<ul className="pcoded-submenu">
+							<li><a href="bc_alert.html">Alert</a></li>
+							<li><a href="bc_button.html">Button</a></li>
+							<li><a href="bc_badges.html">Badges</a></li>
+							<li><a href="bc_breadcrumb-pagination.html">Breadcrumb & paggination</a></li>
+							<li><a href="bc_card.html">Cards</a></li>
+							<li><a href="bc_collapse.html">Collapse</a></li>
+							<li><a href="bc_carousel.html">Carousel</a></li>
+							<li><a href="bc_grid.html">Grid system</a></li>
+							<li><a href="bc_progress.html">Progress</a></li>
+							<li><a href="bc_modal.html">Modal</a></li>
+							<li><a href="bc_spinner.html">Spinner</a></li>
+							<li><a href="bc_tabs.html">Tabs & pills</a></li>
+							<li><a href="bc_typography.html">Typography</a></li>
+							<li><a href="bc_tooltip-popover.html">Tooltip & popovers</a></li>
+							<li><a href="bc_toasts.html">Toasts</a></li>
+							<li><a href="bc_extra.html">Other</a></li>
+						</ul>
+					</li>
+					<li className="nav-item pcoded-menu-caption">
+					    <label>Forms &amp; table</label>
+					</li>
+					<li className="nav-item">
+					    <a href="form_elements.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-file-text"></i></span><span className="pcoded-mtext">Forms</span></a>
+					</li>
+					<li className="nav-item">
+					    <a href="tbl_bootstrap.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-align-justify"></i></span><span className="pcoded-mtext">Bootstrap table</span></a>
+					</li>
+					<li className="nav-item pcoded-menu-caption">
+						<label>Chart & Maps</label>
+					</li>
+					<li className="nav-item">
+					    <a href="chart-apex.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-pie-chart"></i></span><span className="pcoded-mtext">Chart</span></a>
+					</li>
+					<li className="nav-item">
+					    <a href="map-google.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-map"></i></span><span className="pcoded-mtext">Maps</span></a>
+					</li>
+					<li className="nav-item pcoded-menu-caption">
+						<label>Pages</label>
+					</li>
+					<li className="nav-item pcoded-hasmenu">
+					    <a href="#!" className="nav-link "><span className="pcoded-micon"><i className="feather icon-lock"></i></span><span className="pcoded-mtext">Authentication</span></a>
+					    <ul className="pcoded-submenu">
+					        <li><a href="auth-signup.html" target="_blank">Sign up</a></li>
+					        <li><a href="auth-signin.html" target="_blank">Sign in</a></li>
+					    </ul>
+					</li>
+					<li className="nav-item"><a href="sample-page.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-sidebar"></i></span><span className="pcoded-mtext">Sample page</span></a></li>
+
+				</ul>
+				
+				<div className="card text-center">
+					<div className="card-block">
+						<button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i className="feather icon-sunset f-40"></i>
+						<h6 className="mt-3">Upgrade To Pro</h6>
+						<p>Please contact us on our email for need any support</p>
+						<a href="https://1.envato.market/PgJNQ" target="_blank" className="btn btn-primary btn-sm text-white m-0">Upgrade</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+    </>
   )
 }
 
