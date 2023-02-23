@@ -7,6 +7,8 @@ import Dashboard from "./pages/Dashboard"
 import ProjectCreate from "./pages/ProjectCreate"
 import ProjectEdit from "./pages/ProjectEdit"
 import ProjectShow from "./pages/ProjectShow"
+import Form from './components/Form'
+import DocumentListe from './pages/DocumentListe'
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
           <Route path="/create"  element={<ProjectCreate/>} />
           <Route path="/edit/:id"  element={<ProjectEdit/>} />
           <Route path="/show/:id"  element={<ProjectShow/>} />
+          <Route path="/form"  element={<Form/>} />
+          <Route path="/showDocument"  element={<DocumentListe/>} />
+          
       </Routes>
     </Router>
   );

@@ -58,7 +58,44 @@ function ProjectList() {
     return (
         <>
            <div  className="pcoded-main-container">
-            <h2 className="text-center mt-5 mb-3">Project Manager</h2>
+           <div class="row mt-3">
+                <div class="card flat-card widget-primary-card col-md-3 ml-4">
+                    <div class="row-table">
+                        <div class="col-sm-3 card-body">
+                            <i class="feather icon-star-on"></i>
+                        </div>
+                        <div class="col-sm-9">
+                            <h4>10 +</h4>
+                            <h6>Documents generés</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flat-card widget-purple-card col-md-3 ml-2">
+                    <div class="row-table">
+                        <div class="col-sm-3 card-body">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="col-sm-9">
+                            <h4>17</h4>
+                            <h6>Commandes</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flat-card widget-purple-card col-md-3 ml-2">
+                    <div class="row-table">
+                        <div class="col-sm-3 card-body">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="col-sm-9">
+                            <h4>2</h4>
+                            <h6>Abonnements</h6>
+                        </div>
+                    </div>
+                </div>
+                {/* <!-- widget primary card end --> */}
+            </div>
+
+            <h2 className="text-center mb-3">Project Manager</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 

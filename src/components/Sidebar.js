@@ -13,19 +13,11 @@ function Sidebar() {
         </div>
         <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
-                <li className="nav-item">
-                    <a href="#!" className="pop-search"><i className="feather icon-search"></i></a>
-                    <div className="search-bar">
-                        {/* <input type="text" className="form-control border-0 shadow-none" placeholder="Search hear"> */}
-                        <button type="button" className="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </li>
+              
                 <li className="nav-item">
                     <div className="dropdown">
-                        <a className="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
-                            Dropdown
+                        <a className="dropdown-toggle h-drop" href="/#" data-toggle="dropdown">
+                            Category
                         </a>
                         <div className="dropdown-menu profile-notification ">
                             <ul className="pro-body">
@@ -38,8 +30,8 @@ function Sidebar() {
                 </li>
                 <li className="nav-item">
                     <div className="dropdown mega-menu">
-                        <a className="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
-                            Mega
+                        <a className="dropdown-toggle h-drop" href="/#" data-toggle="dropdown">
+                            Offres
                         </a>
                         <div className="dropdown-menu profile-notification ">
                             <div className="row no-gutters">
@@ -93,7 +85,7 @@ function Sidebar() {
             <ul className="navbar-nav ml-auto">
                 <li>
                     <div className="dropdown">
-                        <a className="dropdown-toggle" href="#" data-toggle="dropdown">
+                        <a className="dropdown-toggle" href="/#" data-toggle="dropdown">
                             <i className="icon feather icon-bell"></i>
                             <span className="badge badge-pill badge-danger">5</span>
                         </a>
@@ -157,7 +149,7 @@ function Sidebar() {
                 </li>
                 <li>
                     <div className="dropdown drp-user">
-                        <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                        <a href="/#" className="dropdown-toggle" data-toggle="dropdown">
                             <i className="feather icon-user"></i>
                         </a>
                         <div className="dropdown-menu dropdown-menu-right profile-notification">
