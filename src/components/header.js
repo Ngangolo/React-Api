@@ -10,12 +10,17 @@ function Header() {
         axios.post('/api/auth/logout',{}, { headers:{Authorization: 'Bearer ' + localStorage.getItem('token')}})
         .then((r) => {
             localStorage.setItem('token', "")
-           navigate("/");
+           navigate("/dashboard");
         })
         .catch((e) => {
             console.log(e)
         });
     }
+	const logout = () => {
+
+		localStorage.clear();
+	    navigate("/");
+	}
 
 	return (
 		<>
@@ -54,6 +59,17 @@ function Header() {
 										<i className="feather icon-home"></i>
 									</span>
 									<span className="pcoded-mtext">
+										creer un contrat CDD
+
+									</span>
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link to="/formu" className="nav-link ">
+									<span className="pcoded-micon">
+										<i className="feather icon-home"></i>
+									</span>
+									<span className="pcoded-mtext">
 										creer une entreprise
 
 									</span>
@@ -77,7 +93,7 @@ function Header() {
 								<a href="chart-apex.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-pie-chart"></i></span><span className="pcoded-mtext">Mes Rapport</span></a>
 							</li>
 							<li className="nav-item">
-								<Link onClick={()=>logoutAction()} className="nav-link ">
+								<Link onClick={()=>logout()} className="nav-link ">
 									<span className="pcoded-micon">
 										<i className="feather icon-map"></i>
 									</span><span className="pcoded-mtext">
