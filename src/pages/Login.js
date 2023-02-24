@@ -25,7 +25,7 @@ function Login() {
             email: email,
             password: password,
         }
-        axios.post('/api/login', payload)
+        axios.post('/api/auth/login', payload)
             .then((r) => {
                 setIsSubmitting(false)
                 localStorage.setItem('token', r.data.token)

@@ -58,33 +58,33 @@ function ProjectList() {
     return (
         <>
            <div  className="pcoded-main-container">
-           <div class="row mt-3">
-                <div class="card flat-card widget-primary-card col-md-3 ml-4">
-                    <div class="row-table">
-                        <div class="col-sm-3 card-body">
-                            <i class="feather icon-star-on"></i>
+           <div className="row mt-3">
+                <div className="card flat-card widget-primary-card col-md-3 ml-4">
+                    <div className="row-table">
+                        <div className="col-sm-3 card-body">
+                            <i className="feather icon-star-on"></i>
                         </div>
-                        <div class="col-sm-9">
+                        <div className="col-sm-9">
                             <h4>10 +</h4>
                             <h6>Documents generés</h6>
                         </div>
                     </div>
                 </div>
-                <div class="card flat-card widget-purple-card col-md-3 ml-2">
-                    <div class="row-table">
-                        <div class="col-sm-3 card-body">
-                            <i class="fas fa-trophy"></i>
+                <div className="card flat-card widget-purple-card col-md-3 ml-2">
+                    <div className="row-table">
+                        <div className="col-sm-3 card-body">
+                            <i className="fas fa-trophy"></i>
                         </div>
-                        <div class="col-sm-9">
+                        <div className="col-sm-9">
                             <h4>17</h4>
                             <h6>Commandes</h6>
                         </div>
                     </div>
                 </div>
-                <div class="card flat-card widget-purple-card col-md-3 ml-2">
-                    <div class="row-table">
-                        <div class="col-sm-3 card-body">
-                            <i class="fas fa-trophy"></i>
+                <div className="card flat-card widget-purple-card col-md-3 ml-2">
+                    <div className="row-table">
+                        <div className="col-sm-3 card-body">
+                            <i className="fas fa-trophy"></i>
                         </div>
                         <div class="col-sm-9">
                             <h4>2</h4>

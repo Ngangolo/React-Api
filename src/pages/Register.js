@@ -27,7 +27,7 @@ function Register() {
             password:password,
             password_confirmation:confirmPassword
         }
-        axios.post('/api/register', payload)
+        axios.post('/api/auth/register', payload)
         .then((r) => {
             setIsSubmitting(false)
             localStorage.setItem('token', r.data.token)

@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
@@ -7,7 +7,7 @@ function Header() {
 	const navigate = useNavigate();
 
  const logoutAction = () => {
-        axios.post('/api/logout',{}, { headers:{Authorization: 'Bearer ' + localStorage.getItem('token')}})
+        axios.post('/api/auth/logout',{}, { headers:{Authorization: 'Bearer ' + localStorage.getItem('token')}})
         .then((r) => {
             localStorage.setItem('token', "")
            navigate("/");
@@ -31,7 +31,7 @@ function Header() {
 
 						<div className="">
 							<div className="main-menu-header">
-								<img className="img-radius" src="assets/images/user/avatar-2.jpg" />
+								{/* <img className="img-radius" src="assets/images/user/avatar-2.jpg" /> */}
 								<div className="user-details">
 									<span>KONE</span>
 									<div id="more-details">N'gangolo<i className="fa fa-chevron-down m-l-5"></i></div>
@@ -49,7 +49,7 @@ function Header() {
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link to="/form" className="nav-link ">
+								<Link to="/formu" className="nav-link ">
 									<span className="pcoded-micon">
 										<i className="feather icon-home"></i>
 									</span>

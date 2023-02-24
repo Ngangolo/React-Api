@@ -8,6 +8,7 @@ import {
   StepLabel,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import Layout from "../components/Layout";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -28,6 +29,7 @@ function getStepContent(step) {
   switch (step) {
     case 0:
       return (
+       
         <>
           <TextField
             id="first-name"
@@ -154,6 +156,7 @@ function getStepContent(step) {
             name="cardYear"
           />
         </>
+     
       );
     default:
       return "unknown step";
@@ -191,7 +194,8 @@ const MultiStep = () => {
   };
 
   return (
-    <div>
+    <Layout>
+    <div className="pcoded-main-container">
       <Stepper alternativeLabel activeStep={activeStep}>
         {steps.map((step, index) => {
           const labelProps = {};
@@ -253,6 +257,7 @@ const MultiStep = () => {
         </>
       )}
     </div>
+    </Layout>
   );
 };
 
