@@ -17,9 +17,15 @@ function Header() {
         });
     }
 	const logout = () => {
-		localStorage.removeItem("token");
 		// localStorage.clear();
-	    navigate("/");
+		axios.post('/api/auth/logout')
+        .then((r) => {
+            localStorage.setItem('token', "")
+            navigate("/");
+        })
+        .catch((e) => {
+        });
+	   
 	}
 
 	return (

@@ -97,13 +97,13 @@ const createContractAction = () => {
   http.post('/createContrat', contrat)
   .then((r) => {
     //  setIsSubmitting(false)
-      localStorage.setItem(r.data);
-      console.warn(contrat);
+      console.warn(r.data);
+      // localStorage.setItem('data',r.data);
       navigate("/showDocument");
   })
   .catch((e) => {
      // setIsSubmitting(false)
-      if (e.response.data.errors !== undefined) {
+      if (e.response.data !== undefined) {
         //  setValidationErrors(e.response.data.errors);
       }
   });
