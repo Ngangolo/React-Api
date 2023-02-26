@@ -17,8 +17,8 @@ function Header() {
         });
     }
 	const logout = () => {
-
-		localStorage.clear();
+		localStorage.removeItem("token");
+		// localStorage.clear();
 	    navigate("/");
 	}
 

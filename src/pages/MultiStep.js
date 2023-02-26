@@ -10,7 +10,9 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Layout from "../components/Layout";
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
+import http from '../http-common';
+
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -92,18 +94,19 @@ const createContractAction = () => {
     missionsal:missionsal,
     salbrut: salbrut,
 }
-  axios.post('/api/createContrat', contrat)
-  // .then((r) => {
-  //   //  setIsSubmitting(false)
-  //    //localStorage.setItem(r.data);
-  //     navigate("/showDocument");
-  // })
-  // .catch((e) => {
-  //    // setIsSubmitting(false)
-  //     if (e.response.data.errors !== undefined) {
-  //       //  setValidationErrors(e.response.data.errors);
-  //     }
-  // });
+  http.post('/createContrat', contrat)
+  .then((r) => {
+    //  setIsSubmitting(false)
+      localStorage.setItem(r.data);
+      console.warn(contrat);
+      navigate("/showDocument");
+  })
+  .catch((e) => {
+     // setIsSubmitting(false)
+      if (e.response.data.errors !== undefined) {
+        //  setValidationErrors(e.response.data.errors);
+      }
+  });
 };
 
   const classes = useStyles();
