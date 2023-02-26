@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import Layout from "../components/Layout"
 import ProjectList from './ProjectList'
 // import MultiStep from './MultiStep'
+import http from '../http-common';
   
 function Dashboard() {
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ function Dashboard() {
     },[])
  
     const getUser = () => {
-        axios.get('/api/user', { headers:{Authorization: 'Bearer ' + localStorage.getItem('token')}})
+        http.get('/user', { headers:{Authorization: 'Bearer ' + localStorage.getItem('token')}})
         .then((r) => {
            setUser(r.data)
         })
@@ -28,7 +29,7 @@ function Dashboard() {
     }
  
     const logoutAction = () => {
-        axios.post('/api/logout',{}, { headers:{Authorization: 'Bearer ' + localStorage.getItem('token')}})
+        http.post('/logout',{}, { headers:{Authorization: 'Bearer ' + localStorage.getItem('token')}})
         .then((r) => {
             localStorage.setItem('token', "")
            navigate("/");

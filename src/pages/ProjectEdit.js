@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams } from "react-router-dom"
 import Swal from 'sweetalert2'
-import axios from 'axios'
 import Layout from "../components/Layout"
+import http from '../http-common';
  
 function ProjectEdit() {
     const [id, setId] = useState(useParams().id)
@@ -12,7 +12,7 @@ function ProjectEdit() {
   
       
     useEffect(() => {
-        axios.get(`/api/projects/${id}`)
+        http.get(`/projects/${id}`)
         .then(function (response) {
             let project = response.data
             setName(project.name);
@@ -32,7 +32,7 @@ function ProjectEdit() {
   
     const handleSave = () => {
         setIsSaving(true);
-        axios.patch(`/api/projects/${id}`, {
+        http.patch(`/projects/${id}`, {
             name: name,
             description: description
         })

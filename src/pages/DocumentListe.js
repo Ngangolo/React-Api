@@ -1,7 +1,25 @@
-import React from 'react'
+import React,{ useState, useEffect} from 'react'
+import { Link } from "react-router-dom"
+// import Swal from 'sweetalert2'
+import http from '../http-common';
 import Layout from '../components/Layout'
 
 function DocumentListe() {
+    const  [documenttList, setDocumentList] = useState([])
+  
+    useEffect(() => {
+        fetchDocumenttList()
+    }, [])
+  
+    const fetchDocumenttList = () => {
+        http.get('/documents')
+        .then(function (response) {
+            setDocumentList(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        })
+    }
   return (
     <Layout>
     <div className="row ">
@@ -22,16 +40,34 @@ function DocumentListe() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Creation entreprise</td>
-                                        <td>12/02/2023</td>
-                                        <td>Généré</td>
-                                        <td>
-                                        <button type="button" class="btn  btn-success ml-2">consulter</button>
-                                        <button type="button" className="btn  btn-primary ml-2">Telecharger</button>
-                                        <button type="button" className="btn  btn-danger ml-2">Supprimer</button>
-                                        </td>
-                                    </tr>
+                                {documenttList.map((document, key)=>{
+                                    return (
+                                        <tr key={key}>
+                                            <td>{document.type}</td>
+                                            <td>{document.created_at}</td>
+                                            <td>Généré</td>
+                                            <td>
+                                                <Link
+                                                  // to={`/show/${project.id}`}
+                                                    to={`http://localhost:8000/storage/app/public/contrat/${document.file}`}
+                                                    
+                                                    className="btn btn-success mx-1">
+                                                    consulter
+                                                </Link>
+                                                <Link
+                                                    className="btn btn-primary mx-1"
+                                                    >
+                                                    Telecharger
+                                                </Link>
+                                                <button 
+                                                    // onClick={()=>handleDelete(project.id)}
+                                                    className="btn btn-danger mx-1">
+                                                    Supprimer
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    )
+                                })}
                                 </tbody>
                             </table>
                         </div>

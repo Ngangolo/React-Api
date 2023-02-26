@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from 'react'
-import axios from 'axios'
 import { Link, useNavigate } from "react-router-dom"
+import http from '../http-common';
 
   
 function Register() {
@@ -27,7 +27,7 @@ function Register() {
             password:password,
             password_confirmation:confirmPassword
         }
-        axios.post('/api/auth/register', payload)
+        http.post('/api/auth/register', payload)
         .then((r) => {
             setIsSubmitting(false)
             localStorage.setItem('token', r.data.token)

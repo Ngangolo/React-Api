@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom"
 import Swal from 'sweetalert2'
-import axios from 'axios'
 import Layout from "../components/Layout"
+import http from '../http-common';
  
  
 function ProjecCreate() {
@@ -12,7 +12,7 @@ function ProjecCreate() {
   
     const handleSave = () => {
         setIsSaving(true);
-        axios.post('/api/projects', {
+        http.post('/projects', {
             name: name,
             description: description
           })

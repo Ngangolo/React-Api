@@ -1,7 +1,7 @@
 import React,{ useState, useEffect} from 'react'
 import { Link } from "react-router-dom"
 import Swal from 'sweetalert2'
-import axios from 'axios'
+import http from '../http-common';
  
  
   
@@ -13,7 +13,7 @@ function ProjectList() {
     }, [])
   
     const fetchProjectList = () => {
-        axios.get('/api/projects')
+        http.get('/projects')
         .then(function (response) {
           setProjectList(response.data);
         })
@@ -33,7 +33,7 @@ function ProjectList() {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`/api/projects/${id}`)
+                http.delete(`/projects/${id}`)
                 .then(function (response) {
                     Swal.fire({
                         icon: 'success',

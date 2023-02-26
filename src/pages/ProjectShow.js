@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useParams } from "react-router-dom";
-import axios from 'axios';
 import Layout from "../components/Layout"
+import http from '../http-common';
  
   
 function ProjectShow() {
@@ -9,7 +9,7 @@ function ProjectShow() {
     const [project, setProject] = useState({name:'', description:''})
  
     useEffect(() => {
-        axios.get(`/api/projects/${id}`)
+        http.get(`/projects/${id}`)
         .then(function (response) {
           setProject(response.data)
         })
