@@ -27,7 +27,7 @@ function Register() {
             password:password,
             password_confirmation:confirmPassword
         }
-        http.post('/api/auth/register', payload)
+        http.post('/auth/register', payload)
         .then((r) => {
             setIsSubmitting(false)
             localStorage.setItem('token', r.data.token)
