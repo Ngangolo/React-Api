@@ -103,7 +103,7 @@ function Sidebar() {
                                 </li>
                                 <li className="notification">
                                     <div className="media">
-                                        {/* <img className="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image"> */}
+                                        <img className="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image"/>
                                         <div className="media-body">
                                             <p><strong>John Doe</strong><span className="n-time text-muted"><i className="icon feather icon-clock m-r-10"></i>5 min</span></p>
                                             <p>New ticket Added</p>
@@ -115,7 +115,7 @@ function Sidebar() {
                                 </li>
                                 <li className="notification">
                                     <div className="media">
-                                        {/* <img className="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image"> */}
+                                        <img className="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image"/>
                                         <div className="media-body">
                                             <p><strong>Joseph William</strong><span className="n-time text-muted"><i className="icon feather icon-clock m-r-10"></i>10 min</span></p>
                                             <p>Prchace New Theme and make payment</p>
@@ -124,7 +124,7 @@ function Sidebar() {
                                 </li>
                                 <li className="notification">
                                     <div className="media">
-                                        {/* <img className="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image"> */}
+                                        <img className="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image"/>
                                         <div className="media-body">
                                             <p><strong>Sara Soudein</strong><span className="n-time text-muted"><i className="icon feather icon-clock m-r-10"></i>12 min</span></p>
                                             <p>currently login</p>
@@ -133,7 +133,7 @@ function Sidebar() {
                                 </li>
                                 <li className="notification">
                                     <div className="media">
-                                        {/* <img className="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image"> */}
+                                        <img className="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image"/>
                                         <div className="media-body">
                                             <p><strong>Joseph William</strong><span className="n-time text-muted"><i className="icon feather icon-clock m-r-10"></i>30 min</span></p>
                                             <p>Prchace New Theme and make payment</p>
@@ -154,7 +154,7 @@ function Sidebar() {
                         </a>
                         <div className="dropdown-menu dropdown-menu-right profile-notification">
                             <div className="pro-head">
-                                {/* <img src="assets/images/user/avatar-1.jpg" className="img-radius" alt="User-Profile-Image"> */}
+                                <img src="assets/images/user/avatar-1.jpg" className="img-radius" alt="User-Profile-Image"/>
                                 <span>John Doe</span>
                                 <a href="auth-signin.html" className="dud-logout" title="Logout">
                                     <i className="feather icon-log-out"></i>
