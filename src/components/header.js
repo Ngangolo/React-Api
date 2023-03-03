@@ -42,7 +42,7 @@ function Header() {
 
 						<div className="">
 							<div className="main-menu-header">
-								<img className="img-radius" src="assets/images/user/avatar-2.jpg" />
+								<img className="img-radius" src={process.env.PUBLIC_URL + 'adminfile/images/user/avatar-2.jpg'} />
 								<div className="user-details">
 									<span>KONE</span>
 									<div id="more-details">N'gangolo<i className="fa fa-chevron-down m-l-5"></i></div>
