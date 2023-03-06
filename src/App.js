@@ -9,13 +9,15 @@ import ProjectEdit from "./pages/ProjectEdit"
 import ProjectShow from "./pages/ProjectShow"
 import DocumentListe from './pages/DocumentListe'
 import MultiStep from "./pages/MultiStep"
+import LandingPage from './pages/LandingPage'
 
 
 function App() {
   return (
     <Router>
       <Routes>
-          <Route exact path="/"  element={<Login/>} />
+          {/* <Route exact path="/"  element={<Login/>} /> */}
+          <Route exact path="/"  element={<LandingPage/>} />
           <Route path="/register"  element={<Register/>} />
           <Route path="/dashboard"  element={<Dashboard/>} />
           {/* <Route exact path="/list"  element={<ProjectList/>} /> */}
