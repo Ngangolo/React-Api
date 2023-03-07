@@ -4,9 +4,13 @@ function Sidebar() {
   return (
 	<header className="navbar pcoded-header navbar-expand-lg navbar-light header-dark">
 		
-			
         <div className="m-header">
             <a className="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+            <a href="#!" class="b-brand">
+                {/* <!-- ========   change your logo hear   ============ --> */}
+                <img src={process.env.PUBLIC_URL + 'adminfile/images/logo.png'} alt="" className="logo"/>
+                <img src="assets/images/logo-icon.png" alt="" className="logo-thumb"/>
+            </a>
             <a href="#!" className="mob-toggler">
                 <i className="feather icon-more-vertical"></i>
             </a>

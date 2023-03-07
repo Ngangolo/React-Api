@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from './Sidebar'
+import { Link } from "react-router-dom";
 // import Header from './Header'
 
 function Horizontal({ children }) {
@@ -10,6 +11,11 @@ function Horizontal({ children }) {
 
                     <div className="m-header">
                         <a className="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+                        <a href="#!" class="b-brand">
+                {/* <!-- ========   change your logo hear   ============ --> */}
+                <img src={process.env.PUBLIC_URL + 'adminfile/images/logo.png'} alt="" className="logo"/>
+                <img src="assets/images/logo-icon.png" alt="" className="logo-thumb"/>
+            </a>
                         <a href="#!" className="mob-toggler">
                             <i className="feather icon-more-vertical"></i>
                         </a>
@@ -34,7 +40,166 @@ function Horizontal({ children }) {
                             <li className="nav-item">
                                 <div className="dropdown mega-menu">
                                     <a className="dropdown-toggle h-drop" href="/#" data-toggle="dropdown">
-                                        Offres
+                                        Creation d'entreprise
+                                    </a>
+                                    <div className="dropdown-menu profile-notification ">
+                                        <div className="row no-gutters">
+                                            <div className="col">
+                                                <h6 className="mega-title">CREER MON ENTREPRISE</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Création d'une SASU</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i>  Création d'une SAS</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i>  Création d'une SARL</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i>  Création d'une EURL</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i>  Création d'une SCI</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i>  Création d'une mico-entreprise</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">PROTEGER MA MARQUE</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Deposer ma marque</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Rechercher anteriorité</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">LIRE LES TOPS ARTICLES</h6>
+                                                <ul className="pro-body">
+                                                    
+                                                    <li> <Link to="/formu" className="nav-link "> <i className="feather icon-file-plus"></i> Comment choisir sa forme juridique ?</Link></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-file-minus"></i> Ouvrir son entreprise : comment faire ?</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-calendar"></i> Comment créer une SASU ?</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-upload-cloud"></i>Les avantages du statut SAS</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-scissors"></i>Tout savoir sur l'EURL</a></li>
+                                                    <li> <Link to="/formu" className="nav-link "><i className="feather icon-scissors"></i>Tout savoir sur le CDD</Link></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-scissors"></i>SAS ou SARL : le comparatif</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-scissors"></i>Les avantages de la SARL</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">BIEN D'EBTOURER</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-mail"></i> Nos avantages partenaires pour la création</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <div className="dropdown mega-menu">
+                                    <a className="dropdown-toggle h-drop" href="/#" data-toggle="dropdown">
+                                        Gestion d'entreprise
+                                    </a>
+                                    <div className="dropdown-menu profile-notification ">
+                                        <div className="row no-gutters">
+                                            <div className="col">
+                                                <h6 className="mega-title">UI Element</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Alert</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Button</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Badges</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Cards</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Modal</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Tabs & pills</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">Forms</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Elements</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Validation</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Masking</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Wizard</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Picker</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Select</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">Application</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-mail"></i> Email</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-clipboard"></i> Task</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-check-square"></i> To-Do</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-image"></i> Gallery</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-help-circle"></i> Helpdesk</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">Extension</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-file-plus"></i> Editor</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-file-minus"></i> Invoice</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-calendar"></i> Full calendar</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-upload-cloud"></i> File upload</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-scissors"></i> Image cropper</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <div className="dropdown mega-menu">
+                                    <a className="dropdown-toggle h-drop" href="/#" data-toggle="dropdown">
+                                        Redaction de contrat
+                                    </a>
+                                    <div className="dropdown-menu profile-notification ">
+                                        <div className="row no-gutters">
+                                            <div className="col">
+                                                <h6 className="mega-title">UI Element</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Alert</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Button</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Badges</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Cards</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Modal</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="fas fa-circle"></i> Tabs & pills</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">Forms</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Elements</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Validation</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Masking</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Wizard</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Picker</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-minus"></i> Select</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">Application</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-mail"></i> Email</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-clipboard"></i> Task</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-check-square"></i> To-Do</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-image"></i> Gallery</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-help-circle"></i> Helpdesk</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col">
+                                                <h6 className="mega-title">Extension</h6>
+                                                <ul className="pro-body">
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-file-plus"></i> Editor</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-file-minus"></i> Invoice</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-calendar"></i> Full calendar</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-upload-cloud"></i> File upload</a></li>
+                                                    <li><a href="#!" className="dropdown-item"><i className="feather icon-scissors"></i> Image cropper</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <div className="dropdown mega-menu">
+                                    <a className="dropdown-toggle h-drop" href="/#" data-toggle="dropdown">
+                                        Accompagnement juridique
                                     </a>
                                     <div className="dropdown-menu profile-notification ">
                                         <div className="row no-gutters">

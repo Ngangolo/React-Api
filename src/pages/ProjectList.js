@@ -92,6 +92,17 @@ function ProjectList() {
                         </div>
                     </div>
                 </div>
+                <div className="card flat-card widget-primary-card col-md-2 ml-2 ">
+                    <div className="row-table">
+                        <div className="col-sm-3 card-body">
+                            <i className="feather icon-star-on"></i>
+                        </div>
+                        <div className="col-sm-9">
+                            <h4>10 +</h4>
+                            <h6>Documents generés</h6>
+                        </div>
+                    </div>
+                </div>
                 {/* <!-- widget primary card end --> */}
             </div>
 
